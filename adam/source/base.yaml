@@ -1,0 +1,777 @@
+name: Adam
+maintainers:
+  - Ricardo <souzk@mail.com>
+semanticClasses: theme.adam
+semanticHighlighting: true
+adam:
+  tint:
+    - &pink          '#FF8DC7'
+    - &purple        '#ab9df2'
+    - &blue          '#8be9fd'
+    - &orange        '#FFAF8D'
+    - &yellow        '#fff3ad'
+    - &green         '#A8FFAF'
+    - &red           '#f7768e'
+
+  ui:
+    - &background    '#1f1f24'
+    - &overlay       '#23252b'
+    - &border        '#2E2E35'
+    - &selection     '#35353E'
+    - &placeholder   '#8F98A0'
+    - &description   '#adb5bd'
+    - &title         '#f8f9fa'
+    - &comment       '#7D87A3'
+    - &invisible     '#00000000'
+
+colors:
+  contrastBorder: *invisible
+  contrastActiveBorder: *invisible
+
+  foreground: *title
+  descriptionForeground: *description
+  disabledForeground: *placeholder
+  focusBorder: *background
+  widget.shadow: *background
+  selection.background: *selection
+  errorForeground: *red
+  icon.foreground: *placeholder
+  sash.hoverBorder: *border
+
+  window.activeBorder: *background
+  window.inactiveBorder: *background
+
+  textBlockQuote.background: *background
+  textBlockQuote.border: *border
+  textCodeBlock.background: *selection
+  textLink.activeForeground: *placeholder
+  textLink.foreground: *description
+  textPreformat.foreground: *description
+  textSeparator.foreground: *title
+
+  toolbar.hoverBackground: *border
+  toolbar.hoverOutline: *border
+  toolbar.activeBackground: *border
+
+  button.foreground: *title
+  button.background: !alpha [*green, 70]
+  button.border: *green
+  button.separator: *border
+  button.hoverBackground: !alpha [*green, 90]
+
+  checkbox.background: *border
+  checkbox.foreground: *description
+  checkbox.border: *selection
+  checkbox.selectBackground: *border
+  checkbox.selectBorder: *selection
+
+  dropdown.background: *overlay
+  dropdown.listBackground: *overlay
+  dropdown.border: *selection
+  dropdown.foreground: *title
+
+  input.background: *border
+  input.border: !alpha [*placeholder, 30]
+  input.foreground: *title
+  input.placeholderForeground: *placeholder
+
+  inputOption.activeBackground: *selection
+  inputOption.activeBorder: *selection
+  inputOption.activeForeground: *title
+  inputOption.hoverBackground: *selection
+
+  inputValidation.errorBackground: !alpha [*red, 30]
+  inputValidation.errorForeground: *red
+  inputValidation.errorBorder: !alpha [*red, 99]
+
+  inputValidation.infoBackground: !alpha [*blue, 30]
+  inputValidation.infoForeground: *blue
+  inputValidation.infoBorder: !alpha [*blue, 99]
+
+  inputValidation.warningBackground: !alpha [*orange, 30]
+  inputValidation.warningForeground: *orange
+  inputValidation.warningBorder: !alpha [*orange, 99]
+
+  scrollbar.shadow: *background
+  scrollbarSlider.activeBackground: *border
+  scrollbarSlider.background: *border
+  scrollbarSlider.hoverBackground: *border
+
+  badge.foreground: *title
+  badge.background: *selection
+
+  progressBar.background: *selection
+
+  activityBar.foreground: *title
+  activityBar.background: *background
+  activityBar.border: *border
+  activityBar.dropBorder: *background
+
+  activityBar.activeBackground: *invisible
+  activityBar.activeBorder: *invisible
+  activityBar.activeFocusBorder: *invisible
+
+  activityBar.inactiveForeground: *placeholder
+
+  activityBarBadge.foreground: *title
+  activityBarBadge.background: *orange
+
+  activityBarItem.profilesForeground: *placeholder
+  activityBarItem.profilesHoverForeground: *description
+  activityBarItem.profilesBackground: *overlay
+
+  sideBar.background: *background
+  sideBar.foreground: *title
+  sideBar.border: *border
+  sideBar.dropBackground: *background
+
+  sideBarTitle.foreground: *description
+
+  sideBarSectionHeader.background: *border
+  sideBarSectionHeader.foreground: *title
+  sideBarSectionHeader.border: *border
+
+  list.activeSelectionBackground: *border
+  list.activeSelectionForeground: *title
+  list.activeSelectionIconForeground: *description
+
+  list.inactiveSelectionForeground: *placeholder
+  list.inactiveSelectionBackground: *overlay
+  list.inactiveSelectionIconForeground: *placeholder
+
+  list.dropBackground: *background
+
+  list.focusForeground: *title
+  list.focusBackground: *border
+  list.focusOutline: *border
+
+  list.focusAndSelectionOutline: *border
+
+  list.focusHighlightForeground: *green
+  list.highlightForeground: *placeholder
+
+  list.hoverForeground: *title
+  list.hoverBackground: *border
+
+  list.inactiveFocusBackground: *background
+  list.inactiveFocusOutline: *background
+
+  list.invalidItemForeground: *yellow
+  list.errorForeground: *red
+  list.warningForeground: *orange
+
+  listFilterWidget.background: *background
+  listFilterWidget.outline: *border
+  listFilterWidget.shadow: *selection
+  listFilterWidget.noMatchesOutline: *red
+
+  list.filterMatchBackground: *selection
+  list.filterMatchBorder: *selection
+
+  list.deemphasizedForeground: *placeholder
+
+  tree.indentGuidesStroke: *selection
+  tree.tableColumnsBorder: *border
+  tree.tableOddRowsBackground: *border
+
+  minimap.background: *invisible
+  minimap.selectionHighlight: *selection
+
+  minimap.findMatchHighlight: *selection
+  minimap.errorHighlight: *red
+  minimap.warningHighlight: *orange
+
+  minimap.selectionOccurrenceHighlight: *selection
+  minimap.foregroundOpacity: *description
+
+  minimapSlider.background: *selection
+  minimapSlider.hoverBackground: *selection
+  minimapSlider.activeBackground: *selection
+
+  minimapGutter.addedBackground: *green
+  minimapGutter.modifiedBackground: *purple
+  minimapGutter.deletedBackground: *red
+
+  editorGroup.border: *border
+  editorGroup.dropBackground: *overlay
+  editorGroupHeader.noTabsBackground: *overlay
+  editorGroupHeader.tabsBackground: *background
+  editorGroupHeader.tabsBorder: *border
+  editorGroupHeader.border: *border
+
+  editorGroup.emptyBackground: *background
+  editorGroup.focusedEmptyBorder: *background
+  editorGroup.dropIntoPromptForeground: *placeholder
+  editorGroup.dropIntoPromptBackground: *overlay
+  editorGroup.dropIntoPromptBorder: *border
+
+  tab.border: *invisible
+  tab.activeBackground: *overlay
+  tab.activeForeground: *title
+  tab.activeBorder: *green
+  tab.activeBorderTop: *invisible
+
+  tab.hoverBackground: *border
+  tab.hoverForeground: *title
+  tab.hoverBorder: *green
+
+  tab.inactiveBackground: *background
+  tab.inactiveForeground: *description
+
+  tab.unfocusedActiveBackground: *overlay
+  tab.unfocusedActiveForeground: *description
+  tab.unfocusedActiveBorderTop: *invisible
+  tab.unfocusedActiveBorder: *green
+
+  tab.unfocusedHoverBackground: *border
+  tab.unfocusedHoverForeground: *title
+  tab.unfocusedHoverBorder: *green
+
+  tab.unfocusedInactiveBackground: *background
+  tab.unfocusedInactiveForeground: *red
+  tab.lastPinnedBorder: *border
+
+  editorPane.background: *background
+
+  sideBySideEditor.horizontalBorder: *border
+  sideBySideEditor.verticalBorder: *border
+
+  statusBar.foreground: *title
+  statusBar.background: *background
+  statusBar.border: *border
+
+  statusBar.debuggingBackground: *background
+  statusBar.debuggingForeground: *description
+  statusBar.debuggingBorder: *border
+  statusBar.noFolderForeground: *placeholder
+  statusBar.noFolderBackground: *background
+  statusBar.noFolderBorder: *border
+
+  statusBarItem.activeBackground: *background
+  statusBarItem.hoverBackground: *border
+
+  statusBarItem.prominentForeground: *orange
+  statusBarItem.prominentBackground: *background
+  statusBarItem.prominentHoverBackground: *border
+
+  statusBarItem.remoteBackground: *background
+  statusBarItem.remoteForeground: *orange
+
+  statusBarItem.errorBackground: *border
+  statusBarItem.errorForeground: *red
+  statusBarItem.warningBackground: *border
+  statusBarItem.warningForeground: *orange
+
+  titleBar.activeForeground: *title
+  titleBar.activeBackground: *background
+  titleBar.border: *border
+
+  titleBar.inactiveForeground: *placeholder
+  titleBar.inactiveBackground: *background
+
+  menu.separatorBackground: *border
+
+  panel.background: *background
+  panel.border: *border
+  panel.dropBorder: *overlay
+
+  panelTitle.activeForeground: *title
+  panelTitle.inactiveForeground: *description
+  panelTitle.activeBorder: *orange
+
+  panelInput.border: *selection
+  panelSection.border: *border
+
+  terminal.border: *border
+  terminal.foreground: *title
+  terminal.background: *background
+  terminal.selectionBackground: *selection
+  terminal.selectionForeground:
+
+  terminalCursor.foreground: *border
+  terminalCursor.background: *invisible
+
+  terminalCommandDecoration.defaultBackground: *purple
+  terminalCommandDecoration.successBackground: *green
+  terminalCommandDecoration.errorBackground: *red
+
+  terminal.ansiwhite: *title
+  terminal.ansiRed: *red
+  terminal.ansiGreen: *green
+  terminal.ansiYellow: *yellow
+  terminal.ansiBlue: *blue
+  terminal.ansiMagenta: *purple
+  terminal.ansiCyan: *blue
+  terminal.ansiBrightWhite: *title
+  terminal.ansiBrightBlue: *blue
+  terminal.ansiBrightGreen: *green
+  terminal.ansiBrightCyan: *blue
+  terminal.ansiBrightMagenta: *purple
+  terminal.ansiBrightRed: *red
+  terminal.ansiBrightYellow: *yellow
+
+  breadcrumb.background: *background
+  breadcrumb.foreground: *description
+  breadcrumb.focusForeground: *orange
+  breadcrumb.activeSelectionForeground: *orange
+  breadcrumbPicker.background: *border
+
+  editorWidget.foreground: *description
+  editorWidget.background: *background
+  editorWidget.resizeBorder: *selection
+
+  pickerGroup.border: *border
+  pickerGroup.foreground: *description
+
+  debugToolBar.background: *overlay
+  debugToolBar.border: *selection
+
+  notifications.foreground: *title
+  notifications.background: *overlay
+  notifications.border: *border
+
+  notificationsErrorIcon.foreground: *red
+  notificationsWarningIcon.foreground: *orange
+  notificationsInfoIcon.foreground: *blue
+
+  notificationToast.border: *selection
+  notificationLink.foreground: *description
+
+  notificationCenterHeader.foreground: *title
+  notificationCenterHeader.background: *overlay
+  notificationCenter.border: *selection
+
+  gitDecoration.addedResourceForeground: *green
+  gitDecoration.modifiedResourceForeground: *description
+  gitDecoration.deletedResourceForeground: *red
+  gitDecoration.renamedResourceForeground: *description
+  gitDecoration.conflictingResourceForeground: *orange
+  gitDecoration.ignoredResourceForeground: *placeholder
+  gitDecoration.stageDeletedResourceForeground: *red
+  gitDecoration.stageModifiedResourceForeground: *green
+  gitDecoration.submoduleResourceForeground: *description
+  gitDecoration.untrackedResourceForeground: *title
+
+  editor.background: *background
+  editor.selectionBackground: *selection
+  editor.selectionForeground: *title
+
+  editor.inactiveSelectionBackground: *border
+
+  editor.selectionHighlightBackground: *selection
+  editor.selectionHighlightBorder: *selection
+
+  editor.findMatchBackground: *invisible
+  editor.findMatchBorder: *invisible
+  editor.findMatchHighlightBackground: *selection
+  editor.findMatchHighlightBorder: *selection
+
+  editor.rangeHighlightBackground: *border
+  editor.hoverHighlightBackground: *selection
+
+  editor.wordHighlightBackground: *selection
+  editor.wordHighlightBorder: *selection
+  editor.wordHighlightStrongBackground: *selection
+  editor.wordHighlightStrongBorder: *selection
+
+  editor.lineHighlightBackground: !alpha [*placeholder, 30]
+  editor.lineHighlightBorder: !alpha [*placeholder, 90]
+  editor.foldBackground: *border
+
+  editorLineNumber.foreground: *placeholder
+  editorLineNumber.activeForeground: *title
+
+  editorCursor.foreground: *purple
+  editorCursor.background: *invisible
+
+  editorLightBulb.foreground: *yellow
+  editorLightBulbAutoFix.foreground: *yellow
+
+  editorWhitespace.foreground: *selection
+  editorLink.activeForeground: *description
+
+  editorIndentGuide.background: *selection
+  editorIndentGuide.activeBackground: *selection
+  editorRuler.foreground: *border
+
+  editorBracketMatch.background: *selection
+  editorBracketMatch.border: *selection
+
+  editorOverviewRuler.background: *background
+  editorOverviewRuler.border: *border
+  editorOverviewRuler.findMatchForeground: *placeholder
+  editorOverviewRuler.selectionHighlightForeground: *selection
+  editorOverviewRuler.modifiedForeground: *description
+  editorOverviewRuler.addedForeground: *green
+  editorOverviewRuler.deletedForeground: *red
+  editorOverviewRuler.errorForeground: *red
+  editorOverviewRuler.warningForeground: *orange
+  editorOverviewRuler.infoForeground: *blue
+  editorOverviewRuler.bracketMatchForeground: *selection
+
+  editorError.foreground: *red
+  editorError.border: *background
+  editorError.background: *background
+  editorWarning.foreground: *orange
+  editorWarning.border: *background
+  editorWarning.background: *background
+  editorInfo.foreground: *blue
+  editorInfo.border: *background
+  editorInfo.background: *background
+
+  editorGutter.background: *background
+  editorGutter.modifiedBackground: *description
+  editorGutter.addedBackground: *green
+  editorGutter.deletedBackground: *red
+  editorGutter.foldingControlForeground: *placeholder
+  editorGutter.commentRangeForeground: *comment
+
+  editorSuggestWidget.foreground: *title
+  editorSuggestWidget.highlightForeground: *title
+  editorSuggestWidget.background: *background
+  editorSuggestWidget.selectedBackground: *border
+  editorSuggestWidget.selectedForeground: *title
+  editorSuggestWidget.border: *selection
+  editorSuggestWidget.focusHighlightForeground: *green
+  editorSuggestWidget.selectedIconForeground: *description
+
+  editorHint.foreground: *description
+
+  editorHoverWidget.foreground: *title
+  editorHoverWidget.background: *background
+  editorHoverWidget.border: *border
+
+  editorStickyScroll.background: *border
+  editorStickyScrollHover.background: *selection
+
+  debugExceptionWidget.background: *red
+
+  editorCodeLens.foreground: *comment
+
+  editorBracketHighlight.foreground1: *description
+  editorBracketHighlight.foreground2: *description
+  editorBracketHighlight.foreground3: *description
+  editorBracketHighlight.foreground4: *description
+  editorBracketHighlight.foreground5: *description
+  editorBracketHighlight.foreground6: *description
+  editorBracketHighlight.unexpectedBracket.foreground: *description
+
+  diffEditor.border: *border
+  diffEditor.diagonalFill: *background
+  diffEditor.insertedTextBackground:
+  diffEditor.removedTextBackground:
+  diffEditor.insertedLineBackground:
+  diffEditor.removedLineBackground:
+  diffEditorGutter.insertedLineBackground:
+  diffEditorGutter.removedLineBackground:
+  diffEditorOverview.insertedForeground:
+  diffEditorOverview.removedForeground:
+
+  searchEditor.findMatchBackground: *border
+  searchEditor.findMatchBorder: *border
+  searchEditor.textInputBorder: *selection
+
+  problemsErrorIcon.foreground: *red
+  problemsWarningIcon.foreground: *orange
+  problemsInfoIcon.foreground: *blue
+
+  editorUnnecessaryCode.border: *orange
+  editorUnnecessaryCode.opacity: *title
+
+  editorMarkerNavigation.background: *background
+
+  editorMarkerNavigationError.background: *red
+  editorMarkerNavigationWarning.background: *orange
+  editorMarkerNavigationInfo.background: *blue
+
+  editorMarkerNavigationError.headerBackground: !alpha [*red, 30]
+  editorMarkerNavigationWarning.headerBackground: !alpha [*orange, 30]
+  editorMarkerNavigationInfo.headerBackground: !alpha [*blue, 30]
+
+  editorGhostText.foreground: *description
+  editorGhostText.background: *invisible
+
+  peekView.border: *border
+  peekViewEditor.background: *overlay
+  peekViewEditorGutter.background: *overlay
+  peekViewEditor.matchHighlightBackground: *border
+  peekViewEditor.matchHighlightBorder: *border
+  peekViewResult.background: *overlay
+  peekViewResult.fileForeground: *title
+  peekViewResult.lineForeground: *description
+  peekViewResult.matchHighlightBackground: *selection
+  peekViewResult.selectionBackground: *selection
+  peekViewResult.selectionForeground: *title
+  peekViewTitle.background: *border
+  peekViewTitleDescription.foreground: *description
+  peekViewTitleLabel.foreground: *orange
+
+  commandCenter.foreground: *description
+  commandCenter.activeForeground: *title
+  commandCenter.background: *border
+  commandCenter.activeBackground: *border
+  commandCenter.border: *border
+  commandCenter.inactiveForeground: *description
+  commandCenter.inactiveBorder: *border
+  commandCenter.activeBorder: *selection
+
+  banner.background: *background
+  banner.foreground: *overlay
+  banner.iconForeground: *placeholder
+
+  extensionButton.foreground: *placeholder
+  extensionButton.background: *border
+  extensionButton.hoverBackground: *selection
+  extensionButton.separator: *selection
+
+  extensionButton.prominentForeground: *orange
+  extensionButton.prominentBackground: *border
+  extensionButton.prominentHoverBackground: *selection
+
+  extensionBadge.remoteBackground: *orange
+  extensionBadge.remoteForeground: *title
+
+  extensionIcon.starForeground: *yellow
+  extensionIcon.verifiedForeground: *placeholder
+  extensionIcon.preReleaseForeground: *red
+  extensionIcon.sponsorForeground: *pink
+
+  keybindingLabel.background: *overlay
+  keybindingLabel.foreground: *orange
+  keybindingLabel.border: *selection
+  keybindingLabel.bottomBorder: *selection
+
+  keybindingTable.headerBackground: *border
+  keybindingTable.rowsBackground: *border
+
+  welcomePage.background: *background
+  welcomePage.progress.background: *overlay
+  welcomePage.progress.foreground: *selection
+  welcomePage.tileBackground: *background
+  welcomePage.tileHoverBackground: *border
+  welcomePage.tileBorder: *border
+  walkThrough.embeddedEditorBackground: *border
+  walkthrough.stepTitle.foreground: *description
+
+  scm.providerBorder: *border
+
+  settings.headerForeground: *title
+  settings.modifiedItemIndicator: *selection
+  settings.dropdownBackground: *border
+  settings.dropdownForeground: *title
+  settings.dropdownBorder: *selection
+  settings.dropdownListBorder: *selection
+  settings.checkboxBackground: *border
+  settings.checkboxForeground: *description
+  settings.checkboxBorder: *selection
+  settings.rowHoverBackground: *border
+  settings.textInputBackground: *border
+  settings.textInputForeground: *title
+  settings.textInputBorder: *selection
+  settings.numberInputBackground: *border
+  settings.numberInputForeground: *title
+  settings.numberInputBorder: *selection
+  settings.focusedRowBackground: *overlay
+  settings.focusedRowBorder: *selection
+  settings.headerBorder: *border
+  settings.sashBorder: *border
+
+  editor.snippetTabstopHighlightBackground: *border
+  editor.snippetTabstopHighlightBorder: *selection
+  editor.snippetFinalTabstopHighlightBackground: *border
+  editor.snippetFinalTabstopHighlightBorder: *selection
+
+  symbolIcon.arrayForeground: *description
+  symbolIcon.booleanForeground: *purple
+  symbolIcon.classForeground: *pink
+  symbolIcon.colorForeground: *description
+  symbolIcon.constantForeground: *pink
+  symbolIcon.constructorForeground: *pink
+  symbolIcon.enumeratorForeground: *purple
+  symbolIcon.enumeratorMemberForeground: *description
+  symbolIcon.eventForeground: *green
+  symbolIcon.fieldForeground: *orange
+  symbolIcon.fileForeground: *description
+  symbolIcon.folderForeground: *description
+  symbolIcon.functionForeground: *green
+  symbolIcon.interfaceForeground: *pink
+  symbolIcon.keyForeground: *green
+  symbolIcon.keywordForeground: *pink
+  symbolIcon.methodForeground: *pink
+  symbolIcon.moduleForeground: *pink
+  symbolIcon.namespaceForeground: *pink
+  symbolIcon.nullForeground: *purple
+  symbolIcon.numberForeground: *blue
+  symbolIcon.objectForeground: *description
+  symbolIcon.operatorForeground: *description
+  symbolIcon.packageForeground: *description
+  symbolIcon.propertyForeground: *comment
+  symbolIcon.referenceForeground: *comment
+  symbolIcon.snippetForeground: *description
+  symbolIcon.stringForeground: *yellow
+  symbolIcon.structForeground: *pink
+  symbolIcon.textForeground: *description
+  symbolIcon.typeParameterForeground: *description
+  symbolIcon.unitForeground: *description
+  symbolIcon.variableForeground: *pink
+
+  debugIcon.breakpointForeground: *description
+  debugIcon.breakpointDisabledForeground: *placeholder
+  debugIcon.breakpointUnverifiedForeground: *description
+  debugIcon.breakpointCurrentStackframeForeground: *description
+  debugIcon.breakpointStackframeForeground: *description
+
+  debugIcon.startForeground: *placeholder
+  debugIcon.pauseForeground: *red
+  debugIcon.stopForeground: *red
+  debugIcon.disconnectForeground: *red
+  debugIcon.restartForeground: *green
+  debugIcon.stepOverForeground: *description
+  debugIcon.stepIntoForeground: *description
+  debugIcon.stepOutForeground: *description
+  debugIcon.continueForeground: *purple
+  debugIcon.stepBackForeground: *orange
+  debugConsole.infoForeground: *blue
+  debugConsole.warningForeground: *orange
+  debugConsole.errorForeground: *red
+  debugConsole.sourceForeground: *description
+  debugConsoleInputIcon.foreground: *description
+
+  charts.foreground: *description
+  charts.lines: *border
+  charts.red: *red
+  charts.blue: *blue
+  charts.yellow: *yellow
+  charts.orange: *orange
+  charts.green: *green
+  charts.purple: *purple
+
+  testing.iconFailed: *orange
+  testing.iconErrored: *red
+  testing.iconPassed: *green
+  testing.runAction: *placeholder
+  testing.iconQueued: *placeholder
+  testing.iconUnset: *placeholder
+  testing.iconSkipped: *description
+  testing.peekBorder: *border
+  testing.peekHeaderBackground: *border
+  testing.message.error.decorationForeground: *red
+  testing.message.error.lineBackground: *border
+  testing.message.info.decorationForeground: *blue
+  testing.message.info.lineBackground: *border
+
+tokenColors:
+  # #C2CAD0
+  - scope:
+      - source
+      - keyword.other.unit
+      - constant.numeric.css
+      - text.html.derivative
+      - variable.other.object
+      - variable.other.readwrite
+      - variable.other.constant
+      - support.type.property-name.css
+      - meta.field.declaration
+      - meta.object.member
+      - meta.definition.method
+      - punctuation.separator.comma
+      - punctuation.terminator.statement
+      - punctuation.definition.section.case-statement
+      - source.yaml
+      - meta.paragraph.markdown
+      - string.other.link.title
+      - text.html.markdown
+      - support.class.promise
+      - support.type.object.module
+      - string.quoted.double.json
+      - variable.parameter
+      - entity.name.function
+      - punctuation.accessor
+      - punctuation.separator.parameter
+      - entity.name.type
+      - entity.name.type.alias
+      - entity.name.type.interface
+    settings:
+      foreground: *title
+      fontStyle: italic bold
+
+    # #7983A1
+  - scope:
+      - comment
+      - comment.line.double-slash.js
+      - punctuation.definition.tag
+    settings:
+      foreground: *comment
+      fontStyle: italic bold
+
+  # #FFF9B0
+  - scope:
+      - string.quoted
+      - string.template
+      - markup.quote.markdown
+    settings:
+      foreground: *yellow
+      fontStyle: italic bold
+
+  # #7DE5ED
+  - scope:
+      - constant.language.boolean
+      - constant.numeric
+      - constant.numeric.json.comments
+      - markup.underline.link
+      - punctuation.definition.bold
+      - variable.other.constant.property
+      - source.ts
+    settings:
+      foreground: *blue
+      fontStyle: italic bold
+
+  # #FF8DC7
+  - scope:
+      - storage
+      - keyword
+      - entity.name.tag
+      - punctuation.separator.key-value.html
+      - constant.language.json.comments
+
+    settings:
+      foreground: *pink
+      fontStyle: italic bold
+
+  # #FFCC8F
+  - scope:
+      - support.type.primitive
+    settings:
+      foreground: *orange
+      fontStyle: italic bold
+
+  # #B3FFAE
+  - scope:
+      - support.type.property-name.json
+      - constant.language.boolean
+      - entity.name.function
+      - entity.other.attribute-name.class
+      - markup.list.unnumbered
+      - markup.inline.raw.string.markdown
+      - entity.name.tag.yaml
+    settings:
+      foreground: *green
+      fontStyle: italic bold
+
+  # #B1B2FF
+  - scope:
+      - variable.language.this
+      - constant.numeric.json.comments
+      - support.type
+      - entity.other.attribute-name.id
+      - source.js
+      - punctuation.terminator.rule
+      - punctuation.separator.key-value
+      - meta.property-name
+      - punctuation.definition.heading
+      - entity.name.section
+      - punctuation.definition.italic
+      - variable.language.this
+    settings:
+      foreground: *purple
+      fontStyle: italic bold

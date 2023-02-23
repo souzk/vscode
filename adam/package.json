@@ -1,0 +1,55 @@
+{
+  "name": "adam",
+  "version": "0.0.1",
+  "displayName": "Adam",
+  "description": "Adam is a minimalist and elegant theme with a built-in icon pack.",
+  "publisher": "origin",
+  "icon": "icon.png",
+  "license": "MIT",
+  "repository": "github:souzk/vscode/theme/adam",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "bun ./core/build.js",
+    "prepublish": "npm run build && vsce package",
+    "publish": "vsce publish"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "adam",
+    "minimalist",
+    "icons"
+  ],
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "id": "adam",
+        "label": "Adam",
+        "uiTheme": "vs-dark",
+        "path": "./theme/base.json"
+      },
+      {
+        "id": "eve",
+        "label": "Eve",
+        "uiTheme": "vs",
+        "path": "./theme/light.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "monokai",
+        "label": "Monokai",
+        "path": "icons/icons.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "nodemon": "^2.0.20"
+  }
+}

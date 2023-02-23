@@ -1,0 +1,811 @@
+name: Eve
+type: light
+maintainers:
+  - Ricardo <souzk@mail.com>
+semanticClass: theme.eve
+semanticHighlighting: true
+eve:
+  tint:
+    - &white             '#FCFCFD'
+    - &black             '#787892'
+    - &gray              '#9393A8'
+    - &blue              '#8DDDFF'
+    - &green             '#79F391'
+    - &pink              '#FF80BF'
+    - &orange            '#FFAF8D'
+    - &purple            '#B1B2FF'
+    - &yellow            '#FFDB89'
+    - &red               '#FF8D8D'
+  ui:
+    - &background        '#FCFCFD'
+    - &overlay           '#F7F7F8'
+    - &border            '#F3F3F4'
+    - &outline           '#F0F0F2'
+    - &placeholder       '#AFAEC3'
+    - &comment           '#8F8FAD'
+
+colors:
+  contrastBorder: !alpha [*background, 10]
+  contrastActiveBorder: !alpha [*background, 10]
+
+  foreground: *black
+  descriptionForeground: *placeholder
+  disabledForeground: *placeholder
+  focusBorder: *background
+  widget.shadow: *outline
+  selection.background: *overlay
+  errorForeground: *red
+  icon.foreground: *placeholder
+  sash.hoverBorder: *overlay
+
+  window.activeBorder: *background
+  window.inactiveBorder: *background
+
+  textBlockQuote.background: *background
+  textBlockQuote.border: *orange
+  textCodeBlock.background: *overlay
+  textLink.activeForeground: *placeholder
+  textLink.foreground: *placeholder
+  textPreformat.foreground: *green
+  textSeparator.foreground: *border
+
+  toolbar.hoverBackground: !alpha [*gray, 20]
+  toolbar.hoverOutline: !alpha [*gray, 20]
+  toolbar.activeBackground: !alpha [*gray, 20]
+
+  button.foreground: *purple
+  button.background: !alpha [*purple, 20]
+  button.border: !alpha [*purple, 60]
+  button.separator: !alpha [*purple, 30]
+  button.hoverBackground: !alpha [*purple, 50]
+
+  checkbox.background: *overlay
+  checkbox.foreground: *gray
+  checkbox.border: *overlay
+  checkbox.selectBackground: !alpha [*green, 20]
+  checkbox.selectBorder: !alpha [*green, 60]
+
+  dropdown.background: *overlay
+  dropdown.listBackground: *overlay
+  dropdown.border: *outline
+  dropdown.foreground: *gray
+
+  input.background: *overlay
+  input.border: !alpha [*gray, 18]
+  input.foreground: *gray
+  input.placeholderForeground: *placeholder
+
+  inputOption.activeBackground: !alpha [*gray, 18]
+  inputOption.activeBorder: *outline
+  inputOption.activeForeground: *gray
+  inputOption.hoverBackground: !alpha [*gray, 18]
+
+  inputValidation.errorBackground: !alpha [*red, 50]
+  inputValidation.errorForeground: *red
+  inputValidation.errorBorder: !alpha [*red, 90]
+
+  inputValidation.infoBackground: !alpha [*blue, 50]
+  inputValidation.infoForeground: *blue
+  inputValidation.infoBorder: !alpha [*blue, 90]
+
+  inputValidation.warningBackground: !alpha [*orange, 50]
+  inputValidation.warningForeground: *orange
+  inputValidation.warningBorder: !alpha [*orange, 90]
+
+  scrollbar.shadow: *background
+  scrollbarSlider.activeBackground: *overlay
+  scrollbarSlider.background: *overlay
+  scrollbarSlider.hoverBackground: *overlay
+
+  badge.foreground: *white
+  badge.background: *gray
+
+  progressBar.background: *gray
+
+  activityBar.foreground: *gray
+  activityBar.background: *background
+  activityBar.border: *border
+  activityBar.dropBorder: *background
+
+  activityBar.activeBackground: *background
+  activityBar.activeBorder: *gray
+  activityBar.activeFocusBorder: *gray
+
+  activityBar.inactiveForeground: *placeholder
+
+  activityBarBadge.foreground: *white
+  activityBarBadge.background: *gray
+
+  activityBarItem.profilesForeground: *gray
+  activityBarItem.profilesHoverForeground: *black
+  activityBarItem.profilesBackground: *overlay
+
+  sideBar.background: *background
+  sideBar.foreground: *gray
+  sideBar.border: *border
+  sideBar.dropBackground: *background
+
+  sideBarTitle.foreground: *gray
+
+  sideBarSectionHeader.background: *overlay
+  sideBarSectionHeader.foreground: *gray
+  sideBarSectionHeader.border: *overlay
+
+  list.activeSelectionBackground: *overlay
+  list.activeSelectionForeground: *black
+  list.activeSelectionIconForeground: *black
+
+  list.inactiveSelectionForeground: *gray
+  list.inactiveSelectionBackground: *background
+  list.inactiveSelectionIconForeground: *gray
+
+  list.dropBackground: *overlay
+
+  list.focusForeground: *gray
+  list.focusBackground: *overlay
+  list.focusOutline: *overlay
+
+  list.focusAndSelectionOutline: *overlay
+
+  list.focusHighlightForeground: *gray
+  list.highlightForeground: *green
+
+  list.hoverForeground: *black
+  list.hoverBackground: *overlay
+
+  list.inactiveFocusBackground: *background
+  list.inactiveFocusOutline: *background
+
+  list.invalidItemForeground: *yellow
+  list.errorForeground: *red
+  list.warningForeground: *orange
+
+  listFilterWidget.background: *background
+  listFilterWidget.outline: *border
+  listFilterWidget.shadow: *outline
+  listFilterWidget.noMatchesOutline: *red
+
+  list.filterMatchBackground: *overlay
+  list.filterMatchBorder: *overlay
+
+  list.deemphasizedForeground: *gray
+
+  tree.indentGuidesStroke: *border
+  tree.tableColumnsBorder: *border
+  tree.tableOddRowsBackground: *overlay
+
+  minimap.background: *background
+  minimap.selectionHighlight: !alpha [*gray, 50]
+
+  minimap.findMatchHighlight: !alpha [*gray, 30]
+  minimap.errorHighlight: *red
+  minimap.warningHighlight: *orange
+
+  minimap.selectionOccurrenceHighlight: !alpha [*gray, 30]
+  minimap.foregroundOpacity: !alpha [*gray, 70]
+
+  minimapSlider.background: !alpha [*gray, 10]
+  minimapSlider.hoverBackground: !alpha [*gray, 10]
+  minimapSlider.activeBackground: !alpha [*gray, 10]
+
+  minimapGutter.addedBackground: *green
+  minimapGutter.modifiedBackground: *gray
+  minimapGutter.deletedBackground: *red
+
+  editorGroup.border: *border
+  editorGroup.dropBackground: *overlay
+  editorGroupHeader.noTabsBackground: *overlay
+  editorGroupHeader.tabsBackground: *background
+  editorGroupHeader.tabsBorder: *border
+  editorGroupHeader.border: *border
+
+  editorGroup.emptyBackground: *background
+  editorGroup.focusedEmptyBorder: *background
+  editorGroup.dropIntoPromptForeground: *gray
+  editorGroup.dropIntoPromptBackground: *overlay
+  editorGroup.dropIntoPromptBorder: *border
+
+  tab.border: *background
+  tab.activeBackground: *overlay
+  tab.activeForeground: *gray
+  tab.activeBorder: !alpha [*gray, 60]
+  tab.activeBorderTop: *overlay
+
+  tab.hoverBackground: !alpha [*gray, 10]
+  tab.hoverForeground: *black
+  tab.hoverBorder: !alpha [*gray, 90]
+
+  tab.inactiveBackground: *background
+  tab.inactiveForeground: *placeholder
+
+  tab.unfocusedActiveBackground: *background
+  tab.unfocusedActiveForeground: *placeholder
+  tab.unfocusedActiveBorderTop: *background
+  tab.unfocusedActiveBorder: !alpha [*gray, 70]
+
+  tab.unfocusedHoverBackground: *overlay
+  tab.unfocusedHoverForeground: *black
+  tab.unfocusedHoverBorder: !alpha [*gray, 90]
+
+  tab.unfocusedInactiveBackground: *background
+  tab.unfocusedInactiveForeground: *placeholder
+  tab.lastPinnedBorder: *overlay
+
+  editorPane.background: *background
+
+  sideBySideEditor.horizontalBorder: *border
+  sideBySideEditor.verticalBorder: *border
+
+  statusBar.foreground: *gray
+  statusBar.background: *background
+  statusBar.border: *border
+
+  statusBar.debuggingBackground: *background
+  statusBar.debuggingForeground: *gray
+  statusBar.debuggingBorder: *border
+  statusBar.noFolderForeground: *placeholder
+  statusBar.noFolderBackground: *background
+  statusBar.noFolderBorder: *border
+
+  statusBarItem.activeBackground: *background
+  statusBarItem.hoverBackground: *overlay
+
+  statusBarItem.prominentForeground: *purple
+  statusBarItem.prominentBackground: *background
+  statusBarItem.prominentHoverBackground: *overlay
+
+  statusBarItem.remoteBackground: *background
+  statusBarItem.remoteForeground: *purple
+
+  statusBarItem.errorBackground: *background
+  statusBarItem.errorForeground: *red
+  statusBarItem.warningBackground: *background
+  statusBarItem.warningForeground: *orange
+
+  titleBar.activeForeground: *placeholder
+  titleBar.activeBackground: *background
+  titleBar.border: *border
+
+  titleBar.inactiveForeground: *placeholder
+  titleBar.inactiveBackground: *background
+
+  menu.separatorBackground: *border
+
+  panel.background: *background
+  panel.border: *border
+  panel.dropBorder: *overlay
+
+  panelTitle.activeForeground: *gray
+  panelTitle.inactiveForeground: *placeholder
+  panelTitle.activeBorder: !alpha [*gray, 90]
+
+  panelInput.border: *outline
+  panelSection.border: *border
+
+  terminal.border: *border
+  terminal.foreground: *gray
+  terminal.background: *background
+  terminal.selectionBackground: *overlay
+  terminal.selectionForeground: *gray
+
+  terminalCursor.foreground: *gray
+  terminalCursor.background: *overlay
+
+  terminalCommandDecoration.defaultBackground: *purple
+  terminalCommandDecoration.successBackground: *green
+  terminalCommandDecoration.errorBackground: *red
+
+  terminal.ansiBlack: *black
+  terminal.ansiRed: *red
+  terminal.ansiGreen: *green
+  terminal.ansiYellow: *yellow
+  terminal.ansiBlue: *blue
+  terminal.ansiMagenta: *purple
+  terminal.ansiCyan: *blue
+  terminal.ansiWhite: *white
+  terminal.ansiBrightWhite: *overlay
+  terminal.ansiBrightBlack: *gray
+  terminal.ansiBrightBlue: *blue
+  terminal.ansiBrightGreen: *green
+  terminal.ansiBrightCyan: *blue
+  terminal.ansiBrightMagenta: *purple
+  terminal.ansiBrightRed: *red
+  terminal.ansiBrightYellow: *yellow
+
+  breadcrumb.background: *background
+  breadcrumb.foreground: *placeholder
+  breadcrumb.focusForeground: *black
+  breadcrumb.activeSelectionForeground: *black
+  breadcrumbPicker.background: *background
+
+  editorWidget.foreground: *placeholder
+  editorWidget.background: *background
+  editorWidget.resizeBorder: !alpha [*gray, 90]
+
+  pickerGroup.border: *border
+  pickerGroup.foreground: *gray
+
+  debugToolBar.background: *background
+  debugToolBar.border: *border
+
+  notifications.foreground: *black
+  notifications.background: *background
+  notifications.border: *border
+
+  notificationsErrorIcon.foreground: *red
+  notificationsWarningIcon.foreground: *orange
+  notificationsInfoIcon.foreground: *blue
+
+  notificationToast.border: *border
+  notificationLink.foreground: *placeholder
+
+  notificationCenterHeader.foreground: *black
+  notificationCenterHeader.background: *overlay
+  notificationCenter.border: *border
+
+  gitDecoration.addedResourceForeground: *green
+  gitDecoration.modifiedResourceForeground: *gray
+  gitDecoration.deletedResourceForeground: *red
+  gitDecoration.renamedResourceForeground: *gray
+  gitDecoration.conflictingResourceForeground: *purple
+  gitDecoration.ignoredResourceForeground: *placeholder
+  gitDecoration.stageDeletedResourceForeground: *red
+  gitDecoration.stageModifiedResourceForeground: *gray
+  gitDecoration.submoduleResourceForeground: *gray
+  gitDecoration.untrackedResourceForeground: *gray
+
+  editor.background: *background
+  editor.selectionBackground: *overlay
+  editor.selectionForeground: *black
+
+  editor.inactiveSelectionBackground: !alpha [*overlay, 80]
+
+  editor.selectionHighlightBackground: !alpha [*overlay, 60]
+  editor.selectionHighlightBorder: !alpha [*overlay, 90]
+
+  editor.findMatchBackground: !alpha [*overlay, 70]
+  editor.findMatchBorder: !alpha [*overlay, 90]
+  editor.findMatchHighlightBackground: !alpha [*overlay, 70]
+  editor.findMatchHighlightBorder: !alpha [*overlay, 90]
+
+  editor.rangeHighlightBackground: !alpha [*overlay, 90]
+  editor.hoverHighlightBackground: !alpha [*overlay, 90]
+
+  editor.wordHighlightBackground: !alpha [*overlay, 90]
+  editor.wordHighlightBorder: !alpha [*overlay, 90]
+  editor.wordHighlightStrongBackground: !alpha [*overlay, 90]
+  editor.wordHighlightStrongBorder: !alpha [*overlay, 90]
+
+  editor.lineHighlightBackground: !alpha [*gray, 20]
+  editor.lineHighlightBorder: !alpha [*gray, 80]
+  editor.foldBackground: !alpha [*overlay, 90]
+
+  editorLineNumber.foreground: *placeholder
+  editorLineNumber.activeForeground: *black
+
+  editorCursor.foreground: *gray
+  editorCursor.background: *red
+
+  editorLightBulb.foreground: *gray
+  editorLightBulbAutoFix.foreground: *gray
+
+  editorWhitespace.foreground: *placeholder
+  editorLink.activeForeground: *purple
+
+  editorIndentGuide.background: *placeholder
+  editorIndentGuide.activeBackground: *border
+  editorRuler.foreground: *border
+
+  editorBracketMatch.background: *overlay
+  editorBracketMatch.border: *background
+
+  editorOverviewRuler.background: *background
+  editorOverviewRuler.border: *border
+  editorOverviewRuler.findMatchForeground: *gray
+  editorOverviewRuler.selectionHighlightForeground: *overlay
+  editorOverviewRuler.modifiedForeground: *gray
+  editorOverviewRuler.addedForeground: *green
+  editorOverviewRuler.deletedForeground: *red
+  editorOverviewRuler.errorForeground: *red
+  editorOverviewRuler.warningForeground: *orange
+  editorOverviewRuler.infoForeground: *blue
+  editorOverviewRuler.bracketMatchForeground: *overlay
+
+  editorError.foreground: *red
+  editorError.border: *background
+  editorError.background: *background
+  editorWarning.foreground: *orange
+  editorWarning.border: *background
+  editorWarning.background: *background
+  editorInfo.foreground: *blue
+  editorInfo.border: *background
+  editorInfo.background: *background
+
+  editorGutter.background: *background
+  editorGutter.modifiedBackground: !alpha [*gray, 30]
+  editorGutter.addedBackground: *green
+  editorGutter.deletedBackground: *red
+  editorGutter.foldingControlForeground: *placeholder
+  editorGutter.commentRangeForeground: !alpha [*gray, 30]
+
+  editorSuggestWidget.foreground: *placeholder
+  editorSuggestWidget.highlightForeground: *gray
+  editorSuggestWidget.background: *background
+  editorSuggestWidget.selectedBackground: *overlay
+  editorSuggestWidget.selectedForeground: *gray
+  editorSuggestWidget.border: *border
+  editorSuggestWidget.focusHighlightForeground: *gray
+  editorSuggestWidget.selectedIconForeground: *gray
+
+  editorHint.foreground: *placeholder
+
+  editorHoverWidget.foreground: *gray
+  editorHoverWidget.background: *background
+  editorHoverWidget.border: *border
+
+  editorStickyScroll.background: *background
+  editorStickyScrollHover.background: *background
+
+  debugExceptionWidget.background: *red
+
+  editorCodeLens.foreground: *gray
+
+  editorBracketHighlight.foreground1: *gray
+  editorBracketHighlight.foreground2: *gray
+  editorBracketHighlight.foreground3: *gray
+  editorBracketHighlight.foreground4: *gray
+  editorBracketHighlight.foreground5: *gray
+  editorBracketHighlight.foreground6: *gray
+  editorBracketHighlight.unexpectedBracket.foreground: *gray
+
+  diffEditor.border: *border
+  diffEditor.diagonalFill: *background
+  diffEditor.insertedTextBackground: !alpha [*green, 30]
+  diffEditor.removedTextBackground: !alpha [*red, 30]
+  diffEditor.insertedLineBackground: !alpha [*green, 30]
+  diffEditor.removedLineBackground: !alpha [*red, 30]
+  diffEditorGutter.insertedLineBackground: !alpha [*green, 30]
+  diffEditorGutter.removedLineBackground: !alpha [*red, 30]
+  diffEditorOverview.insertedForeground: !alpha [*green, 30]
+  diffEditorOverview.removedForeground: !alpha [*red, 30]
+
+  searchEditor.findMatchBackground: *overlay
+  searchEditor.findMatchBorder: *overlay
+  searchEditor.textInputBorder: *blue
+
+  problemsErrorIcon.foreground: *red
+  problemsWarningIcon.foreground: *orange
+  problemsInfoIcon.foreground: *blue
+
+  editorUnnecessaryCode.border: *orange
+  editorUnnecessaryCode.opacity: !alpha [*gray, 60]
+
+  editorMarkerNavigation.background: *background
+
+  editorMarkerNavigationError.background: *red
+  editorMarkerNavigationWarning.background: *orange
+  editorMarkerNavigationInfo.background: *blue
+
+  editorMarkerNavigationError.headerBackground: *background
+  editorMarkerNavigationWarning.headerBackground: *background
+  editorMarkerNavigationInfo.headerBackground: *background
+
+  editorGhostText.foreground: *placeholder
+  editorGhostText.background: *background
+
+  peekView.border: *border
+  peekViewEditor.background: *overlay
+  peekViewEditorGutter.background: !alpha [*gray, 60]
+  peekViewEditor.matchHighlightBackground: *overlay
+  peekViewEditor.matchHighlightBorder: *overlay
+  peekViewResult.background: *overlay
+  peekViewResult.fileForeground: *black
+  peekViewResult.lineForeground: *black
+  peekViewResult.matchHighlightBackground: *border
+  peekViewResult.selectionBackground: *border
+  peekViewResult.selectionForeground: *black
+  peekViewTitle.background: *overlay
+  peekViewTitleDescription.foreground: *black
+  peekViewTitleLabel.foreground: *gray
+
+  commandCenter.foreground: *placeholder
+  commandCenter.activeForeground: *gray
+  commandCenter.background: *overlay
+  commandCenter.activeBackground: *overlay
+  commandCenter.border: *border
+  commandCenter.inactiveForeground: *placeholder
+  commandCenter.inactiveBorder: *border
+  commandCenter.activeBorder: *border
+
+  banner.background: *background
+  banner.foreground: *overlay
+  banner.iconForeground: *gray
+
+  extensionButton.foreground: *black
+  extensionButton.background: *overlay
+  extensionButton.hoverBackground: !alpha [*gray, 18]
+  extensionButton.separator: *outline
+
+  extensionButton.prominentForeground: *black
+  extensionButton.prominentBackground: *overlay
+  extensionButton.prominentHoverBackground: !alpha [*gray, 18]
+
+  extensionBadge.remoteBackground: *gray
+  extensionBadge.remoteForeground: *white
+
+  extensionIcon.starForeground: *yellow
+  extensionIcon.verifiedForeground: *blue
+  extensionIcon.preReleaseForeground: *green
+  extensionIcon.sponsorForeground: *pink
+
+  keybindingLabel.background: *overlay
+  keybindingLabel.foreground: *gray
+  keybindingLabel.border: *overlay
+  keybindingLabel.bottomBorder: *overlay
+
+  keybindingTable.headerBackground: *overlay
+  keybindingTable.rowsBackground: *overlay
+
+  welcomePage.background: *background
+  welcomePage.progress.background: *overlay
+  welcomePage.progress.foreground: !alpha [*gray, 70]
+  welcomePage.tileBackground: *background
+  welcomePage.tileHoverBackground: !alpha [*overlay, 50]
+  welcomePage.tileBorder: !alpha [*gray, 50]
+  walkThrough.embeddedEditorBackground: *overlay
+  walkthrough.stepTitle.foreground: *gray
+
+  scm.providerBorder: *border
+
+  settings.headerForeground: *black
+  settings.modifiedItemIndicator: !alpha [*gray, 50]
+  settings.dropdownBackground: *overlay
+  settings.dropdownForeground: *black
+  settings.dropdownBorder: *border
+  settings.dropdownListBorder: *border
+  settings.checkboxBackground: *overlay
+  settings.checkboxForeground: *placeholder
+  settings.checkboxBorder: *border
+  settings.rowHoverBackground: *overlay
+  settings.textInputBackground: *overlay
+  settings.textInputForeground: *black
+  settings.textInputBorder: *border
+  settings.numberInputBackground: *overlay
+  settings.numberInputForeground: *black
+  settings.numberInputBorder: *border
+  settings.focusedRowBackground: *overlay
+  settings.focusedRowBorder: *border
+  settings.headerBorder: *border
+  settings.sashBorder: *border
+
+  editor.snippetTabstopHighlightBackground: *overlay
+  editor.snippetTabstopHighlightBorder: *border
+  editor.snippetFinalTabstopHighlightBackground: *overlay
+  editor.snippetFinalTabstopHighlightBorder: *border
+
+  symbolIcon.arrayForeground: *gray
+  symbolIcon.booleanForeground: *purple
+  symbolIcon.classForeground: *pink
+  symbolIcon.colorForeground: *gray
+  symbolIcon.constantForeground: *pink
+  symbolIcon.constructorForeground: *pink
+  symbolIcon.enumeratorForeground: *purple
+  symbolIcon.enumeratorMemberForeground: *gray
+  symbolIcon.eventForeground: *green
+  symbolIcon.fieldForeground: *gray
+  symbolIcon.fileForeground: *gray
+  symbolIcon.folderForeground: *gray
+  symbolIcon.functionForeground: *green
+  symbolIcon.interfaceForeground: *pink
+  symbolIcon.keyForeground: *green
+  symbolIcon.keywordForeground: *pink
+  symbolIcon.methodForeground: *green
+  symbolIcon.moduleForeground: *green
+  symbolIcon.namespaceForeground: *purple
+  symbolIcon.nullForeground: *purple
+  symbolIcon.numberForeground: *blue
+  symbolIcon.objectForeground: *gray
+  symbolIcon.operatorForeground: *gray
+  symbolIcon.packageForeground: *green
+  symbolIcon.propertyForeground: *orange
+  symbolIcon.referenceForeground: *pink
+  symbolIcon.snippetForeground: *gray
+  symbolIcon.stringForeground: *yellow
+  symbolIcon.structForeground: *pink
+  symbolIcon.textForeground: *gray
+  symbolIcon.typeParameterForeground: *orange
+  symbolIcon.unitForeground: *blue
+  symbolIcon.variableForeground: *pink
+
+  debugIcon.breakpointForeground: *red
+  debugIcon.breakpointDisabledForeground: !alpha [*red, 40]
+  debugIcon.breakpointUnverifiedForeground: !alpha [*red, 70]
+  debugIcon.breakpointCurrentStackframeForeground: *red
+  debugIcon.breakpointStackframeForeground: *red
+
+  debugIcon.startForeground: *gray
+  debugIcon.pauseForeground: *gray
+  debugIcon.stopForeground: *red
+  debugIcon.disconnectForeground: *placeholder
+  debugIcon.restartForeground: *green
+  debugIcon.stepOverForeground: *gray
+  debugIcon.stepIntoForeground: *gray
+  debugIcon.stepOutForeground: *gray
+  debugIcon.continueForeground: *gray
+  debugIcon.stepBackForeground: *gray
+  debugConsole.infoForeground: *blue
+  debugConsole.warningForeground: *orange
+  debugConsole.errorForeground: *red
+  debugConsole.sourceForeground: *green
+  debugConsoleInputIcon.foreground: *gray
+
+  charts.foreground: *gray
+  charts.lines: *background
+  charts.red: *red
+  charts.blue: *blue
+  charts.yellow: *yellow
+  charts.orange: *orange
+  charts.green: *green
+  charts.purple: *purple
+
+  testing.iconFailed: *orange
+  testing.iconErrored: *red
+  testing.iconPassed: *green
+  testing.runAction: *yellow
+  testing.iconQueued: *gray
+  testing.iconUnset: *gray
+  testing.iconSkipped: *orange
+  testing.peekBorder: *border
+  testing.peekHeaderBackground: *background
+  testing.message.error.decorationForeground: *red
+  testing.message.error.lineBackground: !alpha [*red, 50]
+  testing.message.info.decorationForeground: *blue
+  testing.message.info.lineBackground: !alpha [*blue, 50]
+
+tokenColors:
+  # #6E6E95
+  - scope:
+      - source
+      - keyword.other.unit
+      - constant.numeric.css
+      - variable.other.object
+      - variable.other.readwrite
+      - variable.other.constant
+      - support.type.property-name.css
+      - meta.field.declaration
+      - meta.object.member
+      - meta.definition.method
+      - punctuation.separator.comma
+      - punctuation.terminator.statement
+      - punctuation.definition.section.case-statement
+      - source.yaml
+      - meta.paragraph.markdown
+      - string.other.link.title
+      - text.html.markdown
+      - support.class.promise
+      - support.type.object.module
+      - string.quoted.double.json
+      - variable.parameter
+      - entity.name.function
+      - punctuation.accessor
+      - punctuation.separator.parameter
+      - entity.name.type
+      - entity.name.type.alias
+      - entity.name.type.interface
+      - meta.jsx.children.js.jsx
+      - meta.jsx.children.tsx
+      -	entity.other.inherited-class.ts
+      - variable.language.this.ts
+    settings:
+      foreground: *black
+      fontStyle: italic bold
+
+  # #9494B3
+  - scope:
+      - comment
+      - comment.line.double-slash.js
+      - punctuation.definition.tag
+      - string.quoted
+      - string.template
+      - entity.other.attribute-name.js.jsx
+      - entity.other.attribute-name.tsx
+      - entity.other.attribute-name.attribute.scss
+      - entity.other.attribute-name.pseudo-element.css
+      - variable.other.enummember.ts
+      - text.html.derivative
+      - support.type.property-name.css
+      - constant.other.color.rgb-value.hex.css
+    settings:
+      foreground: *gray
+      fontStyle: italic bold
+
+  # #8F8FAD
+  - scope:
+      - comment
+      - comment.line.double-slash.js
+    settings:
+      foreground: *comment
+      fontStyle: italic bold
+
+  # #93C5FD
+  - scope:
+      - constant.language.boolean
+      - constant.numeric
+      - constant.numeric.json.comments
+      - markup.underline.link
+      - punctuation.definition.bold
+      - variable.other.constant.property
+      - constant.numeric.css
+      - keyword.other.unit
+    settings:
+      foreground: *blue
+      fontStyle: italic bold
+
+  # #FF79C6
+  - scope:
+      - storage
+      - keyword
+      - entity.name.tag
+      - punctuation.separator.key-value.html
+      - support.type.property-name.json
+    settings:
+      foreground: *pink
+      fontStyle: italic bold
+
+  # #FFCC8F
+  - scope:
+      - support.type.primitive
+      - string.quoted.double.css
+      - string.quoted.single.css
+      - string.quoted.double
+      - string.quoted.single
+      - markup.quote.markdown
+    settings:
+      foreground: *orange
+      fontStyle: italic bold
+
+  # #AFAEC3
+  - scope:
+      - variable.argument.css
+      - support.constant.property-value.css
+      - punctuation.section.embedded.begin.php
+      - punctuation.section.embedded.end.php
+      - entity.name.type.ts
+      - string.quoted.double
+      - string.quoted.single
+    settings:
+      foreground: *placeholder
+      fontStyle: italic bold
+
+   # #53F073
+  - scope:
+      - constant.language.boolean
+      - entity.name.function
+      - markup.list.unnumbered
+      - meta.attribute-selector.scss
+      - variable.language.super.ts
+      - support.function.misc.css
+      - support.function.calc.css
+      - entity.other.attribute-name
+      - markup.inline.raw.string.markdown
+    settings:
+      foreground: *green
+      fontStyle: italic bold
+
+  # #B1B2FF
+  - scope:
+      - support.type
+      - constant.numeric.json.comments
+      - entity.other.attribute-name.id
+      - meta.property-name
+      - constant.language.json.comments
+      - punctuation.definition.heading
+      - entity.name.section
+      - punctuation.definition.italic
+      - support.class.component.js.jsx
+      - support.class.component.tsx
+      - variable.other.property
+      - support.function.kernel.ruby
+    settings:
+      foreground: *purple
+      fontStyle: italic bold

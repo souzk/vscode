@@ -1,0 +1,4 @@
+{
+  "ext": ".yml, .yaml",
+  "exec": "bun ./core/build.js"
+}
