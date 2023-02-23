@@ -19,6 +19,7 @@ adam:
     - &overlay        '#23252b'
     - &border         '#2E2E35'
     - &selection      '#35353E'
+    - &badge          '#595969'
     - &placeholder    '#8F98A0'
     - &description    '#adb5bd'
     - &title          '#f8f9fa'
@@ -55,10 +56,10 @@ colors:
   toolbar.activeBackground: *border
 
   button.foreground: *title
-  button.background: !alpha [*green, 70]
-  button.border: *green
+  button.background: !alpha [*badge, 50]
+  button.border: !alpha [*badge, 70]
   button.separator: *border
-  button.hoverBackground: !alpha [*green, 90]
+  button.hoverBackground: !alpha [*badge, 70]
 
   checkbox.background: *border
   checkbox.foreground: *description
@@ -99,7 +100,7 @@ colors:
   scrollbarSlider.hoverBackground: *border
 
   badge.foreground: *title
-  badge.background: *selection
+  badge.background: *badge
 
   progressBar.background: *selection
 
@@ -115,7 +116,7 @@ colors:
   activityBar.inactiveForeground: *placeholder
 
   activityBarBadge.foreground: *title
-  activityBarBadge.background: *orange
+  activityBarBadge.background: *badge
 
   activityBarItem.profilesForeground: *placeholder
   activityBarItem.profilesHoverForeground: *description
@@ -209,12 +210,12 @@ colors:
   tab.border: *invisible
   tab.activeBackground: *overlay
   tab.activeForeground: *title
-  tab.activeBorder: *green
+  tab.activeBorder: !alpha [*placeholder, 30]
   tab.activeBorderTop: *invisible
 
   tab.hoverBackground: *border
   tab.hoverForeground: *title
-  tab.hoverBorder: *green
+  tab.hoverBorder: !alpha [*placeholder, 50]
 
   tab.inactiveBackground: *background
   tab.inactiveForeground: *description
@@ -222,11 +223,11 @@ colors:
   tab.unfocusedActiveBackground: *overlay
   tab.unfocusedActiveForeground: *description
   tab.unfocusedActiveBorderTop: *invisible
-  tab.unfocusedActiveBorder: *green
+  tab.unfocusedActiveBorder: !alpha [*placeholder, 20]
 
   tab.unfocusedHoverBackground: *border
   tab.unfocusedHoverForeground: *title
-  tab.unfocusedHoverBorder: *green
+  tab.unfocusedHoverBorder: !alpha [*placeholder, 50]
 
   tab.unfocusedInactiveBackground: *background
   tab.unfocusedInactiveForeground: *red
@@ -278,7 +279,7 @@ colors:
 
   panelTitle.activeForeground: *title
   panelTitle.inactiveForeground: *description
-  panelTitle.activeBorder: *orange
+  panelTitle.activeBorder: !alpha [*placeholder, 50]
 
   panelInput.border: *selection
   panelSection.border: *border
@@ -375,14 +376,14 @@ colors:
   editor.wordHighlightStrongBackground: *selection
   editor.wordHighlightStrongBorder: *selection
 
-  editor.lineHighlightBackground: !alpha [*placeholder, 30]
-  editor.lineHighlightBorder: !alpha [*placeholder, 90]
+  editor.lineHighlightBackground: !alpha [*badge, 30]
+  editor.lineHighlightBorder: !alpha [*badge, 40]
   editor.foldBackground: *border
 
   editorLineNumber.foreground: *placeholder
   editorLineNumber.activeForeground: *title
 
-  editorCursor.foreground: *purple
+  editorCursor.foreground: *badge
   editorCursor.background: *invisible
 
   editorLightBulb.foreground: *yellow
@@ -538,7 +539,7 @@ colors:
   extensionIcon.sponsorForeground: *pink
 
   keybindingLabel.background: *overlay
-  keybindingLabel.foreground: *orange
+  keybindingLabel.foreground: *badge
   keybindingLabel.border: *selection
   keybindingLabel.bottomBorder: *selection
 
@@ -773,6 +774,7 @@ tokenColors:
       - entity.name.section
       - punctuation.definition.italic
       - variable.language.this
+      - support.type.swift
     settings:
       foreground: *purple
       fontStyle: italic bold

@@ -6,23 +6,23 @@ semanticClass: theme.eve
 semanticHighlighting: true
 eve:
   tint:
-    - &white             '#FCFCFD'
-    - &black             '#787892'
-    - &gray              '#9393A8'
-    - &blue              '#8DDDFF'
-    - &green             '#79F391'
-    - &pink              '#FF80BF'
-    - &orange            '#FFAF8D'
-    - &purple            '#B1B2FF'
-    - &yellow            '#FFDB89'
-    - &red               '#FF8D8D'
+    - &white '#FCFCFD'
+    - &black '#787892'
+    - &gray '#9393A8'
+    - &blue '#8DDDFF'
+    - &green '#79F391'
+    - &pink '#FF80BF'
+    - &orange '#FFAF8D'
+    - &purple '#B1B2FF'
+    - &yellow '#FFDB89'
+    - &red '#FF8D8D'
   ui:
-    - &background        '#FCFCFD'
-    - &overlay           '#F7F7F8'
-    - &border            '#F3F3F4'
-    - &outline           '#F0F0F2'
-    - &placeholder       '#AFAEC3'
-    - &comment           '#8F8FAD'
+    - &background '#FCFCFD'
+    - &overlay '#F7F7F8'
+    - &border '#F3F3F4'
+    - &outline '#F0F0F2'
+    - &placeholder '#AFAEC3'
+    - &comment '#8F8FAD'
 
 colors:
   contrastBorder: !alpha [*background, 10]
@@ -694,7 +694,7 @@ tokenColors:
       - entity.name.type.interface
       - meta.jsx.children.js.jsx
       - meta.jsx.children.tsx
-      -	entity.other.inherited-class.ts
+      - entity.other.inherited-class.ts
       - variable.language.this.ts
     settings:
       foreground: *black
@@ -760,6 +760,7 @@ tokenColors:
       - string.quoted.double
       - string.quoted.single
       - markup.quote.markdown
+      - support.type.swift
     settings:
       foreground: *orange
       fontStyle: italic bold
@@ -777,7 +778,7 @@ tokenColors:
       foreground: *placeholder
       fontStyle: italic bold
 
-   # #53F073
+    # #53F073
   - scope:
       - constant.language.boolean
       - entity.name.function
