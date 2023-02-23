@@ -1,28 +1,29 @@
 name: Adam
+type: dark
 maintainers:
   - Ricardo <souzk@mail.com>
 semanticClasses: theme.adam
 semanticHighlighting: true
 adam:
   tint:
-    - &pink          '#FF8DC7'
-    - &purple        '#ab9df2'
-    - &blue          '#8be9fd'
-    - &orange        '#FFAF8D'
-    - &yellow        '#fff3ad'
-    - &green         '#A8FFAF'
-    - &red           '#f7768e'
+    - &pink           '#FF8DC7'
+    - &purple         '#ab9df2'
+    - &blue           '#8be9fd'
+    - &orange         '#FFAF8D'
+    - &yellow         '#fff3ad'
+    - &green          '#A8FFAF'
+    - &red            '#f7768e'
 
   ui:
-    - &background    '#1f1f24'
-    - &overlay       '#23252b'
-    - &border        '#2E2E35'
-    - &selection     '#35353E'
-    - &placeholder   '#8F98A0'
-    - &description   '#adb5bd'
-    - &title         '#f8f9fa'
-    - &comment       '#7D87A3'
-    - &invisible     '#00000000'
+    - &background     '#1f1f24'
+    - &overlay        '#23252b'
+    - &border         '#2E2E35'
+    - &selection      '#35353E'
+    - &placeholder    '#8F98A0'
+    - &description    '#adb5bd'
+    - &title          '#f8f9fa'
+    - &comment        '#7D87A3'
+    - &invisible      '#00000000'
 
 colors:
   contrastBorder: *invisible

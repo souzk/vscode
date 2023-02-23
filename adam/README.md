@@ -5,8 +5,12 @@
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PRs-welcome-%235FCC6F.svg" alt="PRs welcome!" />
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%235FCC6F">
+  <a href="https://github.com/souzk/vscode/pulls" target="_blank">
+    <img src="https://img.shields.io/badge/PRs-welcome-%235FCC6F.svg" alt="PRs welcome!" />
+  </a>
+  <a href="https://github.com/souzk/vscode/blob/main/adam/license" target="_blank">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-%235FCC6F">
+  </a>
 </p>
 
 ## Install
