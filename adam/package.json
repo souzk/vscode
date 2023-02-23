@@ -1,17 +1,30 @@
 {
   "name": "adam",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "Adam",
   "description": "Adam is a minimalist and elegant theme with a built-in icon pack.",
   "publisher": "origin",
-  "icon": "icon.png",
   "license": "MIT",
-  "repository": "https://github.com/souzk/vscode",
   "scripts": {
     "dev": "nodemon",
     "build": "bun ./core/build.js",
     "prepublish": "npm run build && vsce package",
     "publish": "vsce publish"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#F7F7F8",
+    "theme": "light"
+  },
+  "maintainers": [
+    "Ricardo Brito <souzk@mail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/souzk/vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/souzk/vscode/issues"
   },
   "categories": [
     "Themes"
