@@ -1,0 +1,50 @@
+{
+  "name": "barman",
+  "displayName": "Barman",
+  "description": "Your assistant for pain-free development.",
+  "version": "0.0.1",
+  "publisher": "origin",
+  "license": "MIT",
+  "scripts": {
+    "package": "vsce package --out ./barman.vsix"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#F7F7F8",
+    "theme": "light"
+  },
+  "maintainers": [
+    "Ricardo Brito <souzk@mail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/souzk/vscode/barman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/souzk/vscode/issues"
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "React Snippets",
+    "Typescript Snippets",
+    "JavaScript Snippets",
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Import React": {
+    "prefix": "imr",
+    "body": [
+      "import * as React from \"react\";"
+    ],
+    "description": "Import React"
+  },
+  "Import ReactDOM": {
+    "prefix": "imrd",
+    "body": [
+      "import ReactDOM from \"react-dom\";"
+    ],
+    "description": "Import ReactDOM"
+  },
+  "Import useState, useEffect": {
+    "prefix": "imrse",
+    "body": [
+      "import { useState, useEffect } from \"react\";"
+    ],
+    "description": "Import useState, useEffect"
+  },
+  "Stateless Function Component": {
+    "prefix": "sfc",
+    "body": [
+      "const ${TM_DIRECTORY/^.+\\\\/(.*)$/$1/} = () => {",
+      "  return (",
+      "    <>",
+      "      <h1>${TM_DIRECTORY/^.+\\\\/(.*)$/$1/}</h1>",
+      "    </>",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_DIRECTORY/^.+\\\\/(.*)$/$1/};"
+    ],
+    "description": "Stateless Function Component"
+  },
+  "useEffect Hook": {
+    "prefix": "uef",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "}, []);"
+    ],
+    "description": "useEffect Hook"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "name": "adam",
-  "version": "0.0.2",
   "displayName": "Adam",
   "description": "Adam is a minimalist and elegant theme with a built-in icon pack.",
+  "version": "0.0.3",
   "publisher": "origin",
   "license": "MIT",
   "scripts": {

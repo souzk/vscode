@@ -1,0 +1,102 @@
+{
+  "Array of strings": {
+    "prefix": ":array<string>",
+    "body": [
+      "const ${1:array} = ['${2:item}', '${3:item}'];"
+    ]
+  },
+  "Array of objects": {
+    "prefix": ":array<object>",
+    "body": [
+      "const ${1:array} = [{${2:key}: ${3:value}}];"
+    ]
+  },
+  "Function statement": {
+    "prefix": "",
+    "body": []
+  },
+  "Arrow function": {
+    "prefix": "",
+    "body": []
+  },
+  "Object statement": {
+    "prefix": "",
+    "body": []
+  },
+  "Class statement": {
+    "prefix": "",
+    "body": []
+  },
+  "Abstract class": {
+    "prefix": "",
+    "body": []
+  },
+  "Loop": {
+    "prefix": "",
+    "body": [
+      "for (let $1 of ${TM_SELECTED_TEXT}) {",
+      "  $0",
+      "};"
+    ]
+  },
+  "Each": {
+    "prefix": ":each",
+    "body": [
+      "${TM_SELECTED_TEXT}.forEach(${2:item} => $0);"
+    ]
+  },
+  "Map": {
+    "prefix": ":map",
+    "body": [
+      "${TM_SELECTED_TEXT}.map(${2:item} => $0);"
+    ]
+  },
+  "Find": {
+    "prefix": ":find",
+    "body": [
+      "${TM_SELECTED_TEXT}.find(${2:item} => $0);"
+    ]
+  },
+  "Filter": {
+    "prefix": ":filter",
+    "body": [
+      "${TM_SELECTED_TEXT}.filter(${2:item} => $0);"
+    ]
+  },
+  "Some": {
+    "prefix": ":some",
+    "body": [
+      "${TM_SELECTED_TEXT}.some(${2:item} => $0);"
+    ]
+  },
+  "Reduce": {
+    "prefix": ":reduce",
+    "body": [
+      "${TM_SELECTED_TEXT}.reduce(${2:item} => $0, 0);"
+    ]
+  },
+  "Destructuring": {
+    "prefix": "",
+    "body": []
+  },
+  "Interface": {
+    "prefix": "",
+    "body": []
+  },
+  "Aliases": {
+    "prefix": "",
+    "body": []
+  },
+  "Enum": {
+    "prefix": "",
+    "body": []
+  },
+  "Log": {
+    "scope": "javascript, typescript",
+    "prefix": "log",
+    "body": [
+      "console.log(${TM_SELECTED_TEXT});"
+    ],
+    "description": "Log output to console"
+  }
+}
