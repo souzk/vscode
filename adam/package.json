@@ -2,13 +2,13 @@
   "name": "adam",
   "displayName": "Adam",
   "description": "Adam is a minimalist and elegant theme with a built-in icon pack.",
-  "version": "0.0.3",
+  "version": "0.1.1",
   "publisher": "origin",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
     "build": "bun ./core/build.js",
-    "prepublish": "npm run build && vsce package",
+    "prepublish": "npm run build && vsce package --out adam.vsix",
     "publish": "vsce publish"
   },
   "icon": "icon.png",

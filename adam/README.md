@@ -34,6 +34,12 @@ Search for Adam extensions in the extension store
 
 <br>
 
+## Settings
+
+✨ [Optional settings](https://gist.github.com/souzk/c0261300c4d7c024361fdd4a0b8548c5)
+
+<br>
+
 ## License
 
 MIT License © Adam

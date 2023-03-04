@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/icon.png" />
+  <img src="https://i.imgur.com/EP6CYks.png" />
 
   <h1>Barman for <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></h1>
   <p>Your assistant for pain-free development</p>

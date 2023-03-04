@@ -6,23 +6,23 @@ semanticClass: theme.eve
 semanticHighlighting: true
 eve:
   tint:
-    - &white '#FCFCFD'
-    - &black '#787892'
-    - &gray '#9393A8'
-    - &blue '#8DDDFF'
-    - &green '#79F391'
-    - &pink '#FF80BF'
-    - &orange '#FFAF8D'
-    - &purple '#B1B2FF'
-    - &yellow '#FFDB89'
-    - &red '#FF8D8D'
+    - &white        '#FCFCFD'
+    - &black        '#787892'
+    - &gray         '#9393A8'
+    - &blue         '#8DDDFF'
+    - &green        '#79F391'
+    - &pink         '#FF80BF'
+    - &orange       '#FFAF8D'
+    - &purple       '#B1B2FF'
+    - &yellow       '#FFDB89'
+    - &red          '#f7768e'
   ui:
-    - &background '#FCFCFD'
-    - &overlay '#F7F7F8'
-    - &border '#F3F3F4'
-    - &outline '#F0F0F2'
-    - &placeholder '#AFAEC3'
-    - &comment '#8F8FAD'
+    - &background   '#FCFCFD'
+    - &overlay      '#F7F7F8'
+    - &border       '#F3F3F4'
+    - &outline      '#F0F0F2'
+    - &placeholder  '#AFAEC3'
+    - &comment      '#8F8FAD'
 
 colors:
   contrastBorder: !alpha [*background, 10]
@@ -493,6 +493,13 @@ colors:
   editorGhostText.foreground: *placeholder
   editorGhostText.background: *background
 
+  editorInlayHint.background: *overlay
+  editorInlayHint.foreground: *purple
+  editorInlayHint.parameterBackground: *overlay
+  editorInlayHint.parameterForeground: *purple
+  editorInlayHint.typeBackground: *overlay
+  editorInlayHint.typeForeground: *purple
+
   peekView.border: *border
   peekViewEditor.background: *overlay
   peekViewEditorGutter.background: !alpha [*gray, 60]
@@ -661,6 +668,9 @@ colors:
   testing.message.error.lineBackground: !alpha [*red, 50]
   testing.message.info.decorationForeground: *blue
   testing.message.info.lineBackground: !alpha [*blue, 50]
+
+  profileBadge.background: *gray
+  profileBadge.foreground: *white
 
 tokenColors:
   # #6E6E95

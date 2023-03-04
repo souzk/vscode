@@ -493,6 +493,13 @@ colors:
   editorGhostText.foreground: *description
   editorGhostText.background: *invisible
 
+  editorInlayHint.background: *overlay
+  editorInlayHint.foreground: *red
+  editorInlayHint.parameterBackground: *overlay
+  editorInlayHint.parameterForeground: *red
+  editorInlayHint.typeBackground: *overlay
+  editorInlayHint.typeForeground: *red
+
   peekView.border: *border
   peekViewEditor.background: *overlay
   peekViewEditorGutter.background: *overlay
@@ -661,6 +668,9 @@ colors:
   testing.message.error.lineBackground: *border
   testing.message.info.decorationForeground: *blue
   testing.message.info.lineBackground: *border
+
+  profileBadge.background: *badge
+  profileBadge.foreground: *title
 
 tokenColors:
   # #C2CAD0
