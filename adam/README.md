@@ -4,14 +4,31 @@
   <h1>Adam for <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></h1>
 </div>
 
-<p align="center">
+<div align="center">
+  <p>An amazingly minimalist theme that inspires great things ✨</p>
+
   <a href="https://github.com/souzk/vscode/pulls" target="_blank">
-    <img src="https://img.shields.io/badge/PRs-welcome-%235FCC6F.svg" alt="PRs welcome!" />
+    <img src="https://img.shields.io/badge/PRs-welcome-%235FCC6F.svg?&color=9BF9A6" loading="lazy" alt="PRs welcome!" />
   </a>
   <a href="https://github.com/souzk/vscode/blob/main/adam/license" target="_blank">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-%235FCC6F">
+    <img src="https://img.shields.io/badge/license-MIT-%235FCC6F?&color=9BF9A6" loading="lazy" alt="License" />
   </a>
-</p>
+  <a href="https://marketplace.visualstudio.com/items?itemName=origin.adam" target="_blank">
+    <img src="https://vsmarketplacebadges.dev/version/origin.adam.svg?&color=FFD38C" loading="lazy" alt="Version" />
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=origin.adam" target="_blank">
+    <img src="https://vsmarketplacebadges.dev/installs/origin.adam.svg?&color=9BF9A6" loading="lazy" alt="Installs" />
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=origin.adam" target="_blank">
+    <img src="https://vsmarketplacebadges.dev/downloads/origin.adam.svg?&color=9BF9A6" loading="lazy" alt="Donwloads" />
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=origin.adam" target="_blank">
+    <img src="https://vsmarketplacebadges.dev/rating-star/origin.adam.svg?&color=EEF99B" loading="lazy" alt="Rating" />
+  </a>
+</div>
+
+<br>
+<br>
 
 ## Install
 

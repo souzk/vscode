@@ -5,6 +5,7 @@
   "version": "0.1.1",
   "publisher": "origin",
   "license": "MIT",
+  "preview": false,
   "scripts": {
     "dev": "nodemon",
     "build": "bun ./core/build.js",
@@ -32,6 +33,8 @@
   "keywords": [
     "theme",
     "adam",
+    "eve",
+    "monokai",
     "minimalist",
     "icons"
   ],
